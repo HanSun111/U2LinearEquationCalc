@@ -12,10 +12,14 @@ public LinearEquation(int x1, int x2, int y1, int y2) - shows linear equation of
 Method:
 public int pointUno(int x1, int y1) - scanner intake for the first point of the linear equation
 public int pointTwo(int x2, int y2) - scanner intake for the second point of the linear equation
+
 public double distanceBetweenUs(int x1, int x2, int y1, int y2) - y value subtracted and x value subtracted, then divide y by x
+
 public double slope (double daSlope) - equation for slopes that calculates the value of slope
 (remember to have a (double) in the equation so it converts into double before it erases any value)
+
 public double yIntercept(double daYInt) - returns back y intercept
+
 public String toString() - returns all asked information about the equation.
 
 EquationRunner.java
@@ -24,3 +28,4 @@ EquationRunner.java
 3. calculate for distance
 4. calculate for y intercept
 5. return all the mentioned data to show user.
+6. remember to have the LinearEquation at the end after the two points recorded
