@@ -15,16 +15,15 @@ public class LinearEquation {
         this.yIntercept = yIntercept;
     }
 
-    public String pointUno(String bracket1, int x, String comma, int y, String bracket2){
-       x1 = x;
-       y2 = y;
-       return bracket1 + x1 + comma + y1 + bracket2;
+    public static void pointUno(int x1, int y1){
+
+       System.out.println ("(" + x1 + ", " + y1 + ")");
     }
 
-    public String pointTwo(String bracket1, int x, String comma, int y, String bracket2){
+    public String pointTwo(int x, int y){
         x2 = x;
         y2 = y;
-        return bracket1 + x2 + comma + y2 + bracket2;
+        return "(" + x2 + ", " + y2 + ")";
     }
 
     public double slope(){
@@ -38,11 +37,11 @@ public class LinearEquation {
     }
 
     public double distanceBetweenPoints(){
-        return
+        return x1;
     }
 
     public double randomXValue(double anyX){
-return
+return y1;
     }
 
     public String slopeInterceptForm(){
