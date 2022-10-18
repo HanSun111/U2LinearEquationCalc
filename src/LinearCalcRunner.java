@@ -18,9 +18,10 @@ public class LinearCalcRunner {
 
         String x2 = secondPoint.substring(1,comma);
         String y2 = secondPoint.substring(comma+1, closingBracket);
-        int realX2 = Integer.parseInt(x1);
-        int realY2 = Integer.parseInt(y1);
+        int realX2 = Integer.parseInt(x2);
+        int realY2 = Integer.parseInt(y2);
 
-
+        LinearEquation theData = new LinearEquation(realX1, realY1, realX2, realY2);
+        theData.pointTwo();
     }
 }
