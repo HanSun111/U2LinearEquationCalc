@@ -12,7 +12,6 @@ public class LinearCalcRunner {
         String y1 = firstPoint.substring(comma+1, closingBracket);
         int realX1 = Integer.parseInt(x1);
         int realY1 = Integer.parseInt(y1);
-        LinearEquation.pointUno(realX1, realY1);
         System.out.println("input your second coordinate: ");
         String secondPoint = quantumCalc.nextLine();
 
@@ -22,6 +21,6 @@ public class LinearCalcRunner {
         int realY2 = Integer.parseInt(y2);
 
         LinearEquation theData = new LinearEquation(realX1, realY1, realX2, realY2);
-        theData.pointTwo();
+
     }
 }
