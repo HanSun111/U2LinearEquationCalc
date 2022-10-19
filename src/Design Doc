@@ -20,7 +20,7 @@ public double LaSlope () - equation for slopes that calculates the value of slop
 
 public double yInt() - returns back y intercept
 
-public String toString() - returns all asked information about the equation.
+public String allNeededInfo() - returns all asked information about the equation.
 
 EquationRunner.java
 1. ask user to enter 1st coordinate
