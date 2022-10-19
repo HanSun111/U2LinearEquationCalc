@@ -10,22 +10,20 @@ Constructors:
 public LinearEquation(int x1, int x2, int y1, int y2) - shows linear equation of the line
 
 Method:
-public int pointUno(int x1, int y1) - scanner intake for the first point of the linear equation
-public int pointTwo(int x2, int y2) - scanner intake for the second point of the linear equation
+public string pointUno() - scanner intake ints for the first point of the linear equation and for later, return comma and brackets along with the x and y coordinates
+public string pointDos() - scanner intake ints for the second point of the linear equation, return comma and brackets along with the x and y coordinates
 
-public double distanceBetweenUs(int x1, int x2, int y1, int y2) - y value subtracted and x value subtracted, then divide y by x
+public double distanceBetweenUs() - x value of point 2 subtracted by the x value of point 1 then square, add it by y value of point 2 subtracted by the y value of point 1 squared, squareroot the value.
 
-public double slope (double daSlope) - equation for slopes that calculates the value of slope
+public double LaSlope () - equation for slopes that calculates the value of slope
 (remember to have a (double) in the equation so it converts into double before it erases any value)
 
-public double yIntercept(double daYInt) - returns back y intercept
+public double yInt() - returns back y intercept
 
 public String toString() - returns all asked information about the equation.
 
 EquationRunner.java
-1. ask user to enter 1st and 2nd coordinate
-2. calculate for slope
-3. calculate for distance
-4. calculate for y intercept
-5. return all the mentioned data to show user.
-6. remember to have the LinearEquation at the end after the two points recorded
+1. ask user to enter 1st coordinate
+2. ask user to enter 2nd coordinate
+3. LinearEquation runs, return all the mentioned data to show user.
+4. input a random real x value and let it calculate the y value, returns the coordinates.

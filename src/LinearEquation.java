@@ -1,9 +1,9 @@
 
 public class LinearEquation {
-    private int x1;
-    private int y1;
-    private int x2;
-    private int y2;
+    final private int x1;
+    final private int y1;
+    final private int x2;
+    final private int y2;
     private double daSlope;
     private double yIntercept;
     public LinearEquation(int x1, int y1, int x2, int y2){
