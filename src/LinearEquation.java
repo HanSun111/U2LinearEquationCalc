@@ -6,8 +6,6 @@ public class LinearEquation {
     private int y2;
     private double daSlope;
     private double yIntercept;
-
-//    double daSlope, double yIntercept
     public LinearEquation(int x1, int y1, int x2, int y2){
         this.x1 = x1;
         this.y1 = y1;
@@ -37,12 +35,7 @@ public class LinearEquation {
         return yIntercept;
     }
     public double distanceBetweenPoints(){
-        double daDistance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        return daDistance;
-    }
-
-    public double randomXValue(double anyX){
-return y1;
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
     public String slopeInterceptForm(){
@@ -50,6 +43,6 @@ return y1;
     }
 
     public String allNeededInfo(){
-        return "\nfirst coordinate: " + pointUno() + "\nsecond coordinate: " +  pointDos() + "\nSlope: " + String.format("%.2f", laSlope()) + "\ny-intercept: ";
+        return "\nfirst coordinate: " + pointUno() + "\nsecond coordinate: " +  pointDos() + "\nSlope: " + String.format("%.2f", laSlope()) + "\ny-intercept: " + String.format("%.2f", yInt()) + "\nslope intercept form: " + slopeInterceptForm() + "\ndistance between the points: " + String.format("%.2f", distanceBetweenPoints());
     }
 }

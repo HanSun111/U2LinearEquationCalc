@@ -21,6 +21,13 @@ public class LinearCalcRunner {
         int realY2 = Integer.parseInt(y2);
 
         LinearEquation theData = new LinearEquation(realX1, realY1, realX2, realY2);
+        System.out.println(theData.allNeededInfo());
 
+        System.out.println("\nwanna know the coordinates given any real x? " + "enter any real x-value, decimal, negative, go nuts: ");
+        double x = quantumCalc.nextDouble();
+        double y = theData.laSlope() * x + theData.yInt();
+        System.out.print( "the coordinate for that x is: " + "(" + x + ", " + String.format("%.2f", y) + ")");
     }
 }
+
+
