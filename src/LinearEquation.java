@@ -26,6 +26,11 @@ public class LinearEquation {
 
     public double laSlope(){
         daSlope = ((double)y2 - y1)/(x2 - x1);
+        /*if(daSlope < 1 && daSlope > 0){
+            String convertFraction = String.valueOf(daSlope);
+            int conversion = convertFraction.indexOf(".");
+            String noPoint = convertFraction.substring(0, conversion) + convertFraction.substring(conversion+1);;
+         */
         return daSlope;
     }
 
