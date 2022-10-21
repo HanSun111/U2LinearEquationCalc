@@ -5,18 +5,24 @@ public class LinearCalcRunner {
         System.out.println("input your first coordinate: ");
         String firstPoint = quantumCalc.nextLine();
 
-        int comma = firstPoint.indexOf(",");
-        int closingBracket = firstPoint.indexOf(")");
+        int comma1 = firstPoint.indexOf(",");
+        int closingBracket1 = firstPoint.indexOf(")");
 
-        String x1 = firstPoint.substring(1,comma);
-        String y1 = firstPoint.substring(comma+1, closingBracket);
+        String x1 = firstPoint.substring(1,comma1);
+        String y1 = firstPoint.substring(comma1+1, closingBracket1);
+
         int realX1 = Integer.parseInt(x1);
         int realY1 = Integer.parseInt(y1);
+
         System.out.println("input your second coordinate: ");
         String secondPoint = quantumCalc.nextLine();
 
-        String x2 = secondPoint.substring(1,comma);
-        String y2 = secondPoint.substring(comma+1, closingBracket);
+        int comma2 = secondPoint.indexOf(",");
+        int closingBracket2 = secondPoint.indexOf(")"); // both points were using firstpoint.index of, so it does not run sometimes
+
+        String x2 = secondPoint.substring(1,comma2);
+        String y2 = secondPoint.substring(comma2+1, closingBracket2);
+
         int realX2 = Integer.parseInt(x2);
         int realY2 = Integer.parseInt(y2);
 
